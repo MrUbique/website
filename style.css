@@ -1,0 +1,136 @@
+/* this is a comment */
+
+/* h1 {
+    color:cadetblue;
+    font-size: 60px
+} */
+
+/* h1, h2, p{
+    color: violet;
+} */
+
+/* this is how you target a HTML element */
+
+
+/* .red {
+    color:red;
+}
+
+.large {
+    font-size: 100px;
+} */
+
+/* ########################################################## */
+
+body {
+    background-image:url(background.jpg)
+}
+p {
+    text-align: center;
+    font-size: large;
+    
+   }
+h3 {
+    text-align: center
+}
+h4 {
+    text-align: center
+}
+
+
+
+#nav {
+    background-color:beige;
+    font-family:fantasy;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 10px;
+    border-style: solid;
+}
+
+#nav a {
+    color:brown;
+    text-decoration: none;
+    font-size: larger;
+/* to change just the anchor tags, use the a after nav. */
+}
+
+#nav a:hover {
+    color:red;
+}
+
+
+
+.title {
+    font-size: xx-large;
+    font-family: fantasy;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    color: brown;  
+}
+
+
+
+.title2 {
+    font-family: fantasy;
+    display: flex;
+    font-size: larger;
+    justify-content:space-evenly;
+    align-items: center;
+    color: brown;     
+}
+
+
+
+.image {
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
+
+
+.welcome_text {
+    font-size: larger;
+    font-weight: bold;
+    display: flex;
+    justify-content:center;
+}
+
+
+
+.cooking_links {
+    background-color:beige;
+    font-family:fantasy;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 10px;
+    border-style: solid;
+    font-size: large;
+}
+
+.cooking_links a {
+    color:brown;
+    text-decoration: none;
+}
+
+.cooking_links a:hover {
+    color:red;
+}
+
+
+
+.contact_me {
+    font-size: larger;
+    font-weight: bold;
+}
+
+
+
+.about_me {
+    font-size: larger;
+}
