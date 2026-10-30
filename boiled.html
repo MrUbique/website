@@ -2,60 +2,88 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Boiled Egg</title>
+    <title>Boiled Egg — Cook that Egg</title>
 </head>
 <body>
-    <div id="nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About me</a>
-        <a href="contact.html">Contact me</a>
-    </div>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <div>
-        <p><br></p>
-    </div>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html">Cook that Egg</a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label class="menu-button" for="nav-toggle">Menu</label>
+            <div class="nav-panels">
+                <nav class="nav-row" aria-label="Site">
+                    <span class="nav-label">Site</span>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About me</a>
+                    <a href="contact.html">Contact me</a>
+                </nav>
+                <nav class="nav-row" aria-label="Recipes">
+                    <span class="nav-label">Recipes</span>
+                    <a href="boiled.html" aria-current="page">Boiled</a>
+                    <a href="fried.html">Fried</a>
+                    <a href="poached.html">Poached</a>
+                    <a href="scrambled.html">Scrambled</a>
+                    <a href="plain omelette.html">Plain Omelette</a>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-    <div class="cooking_links">
-        <a href="boiled.html">Boiled</a>
-        <a href="fried.html">Fried</a>
-        <a href="poached.html">Poached</a>
-        <a href="scrambled.html">Scrambled</a>
-        <a href="plain omelette.html">Plain Omelette</a>
+    <main id="main">
+        <article class="recipe">
+            <p class="kicker">Recipe</p>
+            <h1>Boiling the Egg</h1>
+            <figure class="recipe-photo">
+                <img src="boiled egg.jpg" width="400" height="400" alt="A boiled egg cut open, with a set white and a golden yolk">
+            </figure>
 
+            <div class="recipe-body">
+                <section>
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>Eggs (Room Temperature)</li>
+                        <li>Salt</li>
+                        <li>Water</li>
+                    </ul>
+                </section>
 
-    </div>
-    
-    <div class="title2">
-        <h2><u>Boiling the Egg</u></h2>
-    </div>
-    
-    <div class="image">
-        <img src="boiled egg.jpg" width="400" height="400" alt="boiled egg">
-    
-    </div>
-    
-    <div>
-        <h3>Ingredients</h3>
+                <section>
+                    <h2>Method</h2>
+                    <ol>
+                        <li>Fill a suitable pan with enough water to cover the eggs, add salt to taste.</li>
+                        <li>Bring up to the boil and place the eggs in, being careful not to crack them.</li>
+                        <li>For soft boiled, approximate time is 3-4 mins (depending on size) after the water is brought back to the boil.</li>
+                        <li>For hard-boilded, 12 mins after the water is brought back to the boil.</li>
+                    </ol>
+                </section>
 
-        <p>Eggs (Room Temperature)<br>Salt<br>Water</p>
-    </div>
-    
-    <div>
-        <h4>Method:</h4>
-        <p><b>1.</b>  Fill a suitable pan with enough water to cover the eggs, add salt to taste.<br><b>2.</b>  Bring up to the boil and place the eggs in, being careful not to crack them.<br><b>3.</b>  For soft boiled, approximate time is 3-4 mins (depending on size) after the water is brought back to the boil.<br><b>4.</b>  For hard-boilded, 12 mins after the water is brought back to the boil.</p>
-        
-        <h4>Note:</h4>
-        <p>•  Store hard-boilded eggs in the fridge, remove shell, cover in clean water and cling-film for up to 7 days.<br>•  It is best to use eggs that are at room temperature, this will help with accurate timing.</p>
-    </div>
-    
-    <div>
-        <h4>Equipment List:</h4>
-        
-        <p>2 ltr Saucepan<br>Perforated Spoon<br>Egg Cup<br>Side Plate</p>
-    
-    </div>
+                <section class="recipe-notes">
+                    <h2>Note</h2>
+                    <ul>
+                        <li>Store hard-boilded eggs in the fridge, remove shell, cover in clean water and cling-film for up to 7 days.</li>
+                        <li>It is best to use eggs that are at room temperature, this will help with accurate timing.</li>
+                    </ul>
+                </section>
+
+                <section class="recipe-kit">
+                    <h2>Equipment List</h2>
+                    <ul>
+                        <li>2 ltr Saucepan</li>
+                        <li>Perforated Spoon</li>
+                        <li>Egg Cup</li>
+                        <li>Side Plate</li>
+                    </ul>
+                </section>
+            </div>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <p>Cook that Egg — first website, still serving yolks.</p>
+    </footer>
 </body>
 </html>

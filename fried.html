@@ -2,60 +2,88 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Fried Egg</title>
+    <title>Fried Egg — Cook that Egg</title>
 </head>
 <body>
-    <div id="nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About me</a>
-        <a href="contact.html">Contact me</a>
-    </div>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <div>
-        <p><br></p>
-    </div>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html">Cook that Egg</a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label class="menu-button" for="nav-toggle">Menu</label>
+            <div class="nav-panels">
+                <nav class="nav-row" aria-label="Site">
+                    <span class="nav-label">Site</span>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About me</a>
+                    <a href="contact.html">Contact me</a>
+                </nav>
+                <nav class="nav-row" aria-label="Recipes">
+                    <span class="nav-label">Recipes</span>
+                    <a href="boiled.html">Boiled</a>
+                    <a href="fried.html" aria-current="page">Fried</a>
+                    <a href="poached.html">Poached</a>
+                    <a href="scrambled.html">Scrambled</a>
+                    <a href="plain omelette.html">Plain Omelette</a>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-    <div class="cooking_links">
-        <a href="boiled.html">Boiled</a>
-        <a href="fried.html">Fried</a>
-        <a href="poached.html">Poached</a>
-        <a href="scrambled.html">Scrambled</a>
-        <a href="plain omelette.html">Plain Omelette</a>
+    <main id="main">
+        <article class="recipe">
+            <p class="kicker">Recipe</p>
+            <h1>Fry it up!</h1>
+            <figure class="recipe-photo">
+                <img src="fried egg.jpg" width="400" height="600" alt="A fried egg in a pan, white set and yolk still runny">
+            </figure>
 
+            <div class="recipe-body">
+                <section>
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>Eggs</li>
+                        <li>Oil</li>
+                        <li>Salt &amp; Pepper</li>
+                    </ul>
+                </section>
 
-    </div>
-    
-    <div class="title2">
-        <h2><u>Fry it up!</u></h2>
-    </div>
+                <section>
+                    <h2>Method</h2>
+                    <ol>
+                        <li>Crack the eggs into a pan of shallow hot oil.</li>
+                        <li>Cook slowly, basting occasionally.</li>
+                        <li>Drain off excess fat and serve</li>
+                        <li>Serve on a suitable dish</li>
+                        <li>Season to taste</li>
+                    </ol>
+                </section>
 
-    <div class="image">
-        <img src="fried egg.jpg" width="400" height="600" alt="boiled egg">
-    
-    </div>
-    
-    <div>
-        <h3>Ingredients</h3>
+                <section class="recipe-notes">
+                    <h2>Note</h2>
+                    <ul>
+                        <li>The white should be set and the yolk still soft.</li>
+                    </ul>
+                </section>
 
-        <p>Eggs<br>Oil<br>Salt & Pepper</p>
-    </div>
-    
-    <div>
-        <h4>Method:</h4>
-        <p><b>1.</b>  Crack the eggs into a pan of shallow hot oil.<br><b>2.</b>  Cook slowly, basting occasionally.<br><b>3.</b>  Drain off excess fat and serve<br><b>4.</b>  Serve on a suitable dish<br><b>5.</b>  Season to taste</p>
-        
-        <h4>Note:</h4>
-        <p>•  The white should be set and the yolk still soft.</p>
-    </div>
-    
-    <div>
-        <h4>Equipment List:</h4>
-        
-        <p>Frying Pan<br>Fish Slice (spatula)<br>Paper Towel<br>Suitable plate</p>
-    
-    </div>
+                <section class="recipe-kit">
+                    <h2>Equipment List</h2>
+                    <ul>
+                        <li>Frying Pan</li>
+                        <li>Fish Slice (spatula)</li>
+                        <li>Paper Towel</li>
+                        <li>Suitable plate</li>
+                    </ul>
+                </section>
+            </div>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <p>Cook that Egg — first website, still serving yolks.</p>
+    </footer>
 </body>
 </html>

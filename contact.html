@@ -2,22 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Contact Me</title>
+    <title>Contact me — Cook that Egg</title>
 </head>
 <body>
-    <div id="nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About me</a>
-        <a href="contact.html">Contact me</a>
-    </div>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <div class="contact_me">
-        <p><a href="mailto:poveylee@outlook.com?Subject=Mail from Cook that Egg Website">Send me an email</a><br>
-        <a href="https://www.linkedin.com/in/lee-povey-1a5a07174/" target="_blank">My linkedin profile (work in progress)</p></a>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html">Cook that Egg</a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label class="menu-button" for="nav-toggle">Menu</label>
+            <div class="nav-panels">
+                <nav class="nav-row" aria-label="Site">
+                    <span class="nav-label">Site</span>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About me</a>
+                    <a href="contact.html" aria-current="page">Contact me</a>
+                </nav>
+                <nav class="nav-row" aria-label="Recipes">
+                    <span class="nav-label">Recipes</span>
+                    <a href="boiled.html">Boiled</a>
+                    <a href="fried.html">Fried</a>
+                    <a href="poached.html">Poached</a>
+                    <a href="scrambled.html">Scrambled</a>
+                    <a href="plain omelette.html">Plain Omelette</a>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-    </div>
+    <main id="main">
+        <article class="page-block">
+            <p class="kicker">Say hello</p>
+            <h1>Contact me</h1>
+            <ul class="contact-list">
+                <li><a href="mailto:poveylee@outlook.com?subject=Mail%20from%20Cook%20that%20Egg%20Website">Send me an email</a></li>
+                <li><a href="https://www.linkedin.com/in/lee-povey-1a5a07174/" target="_blank" rel="noopener noreferrer">My linkedin profile (work in progress)</a></li>
+            </ul>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <p>Cook that Egg — first website, still serving yolks.</p>
+    </footer>
 </body>
 </html>

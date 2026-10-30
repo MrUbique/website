@@ -2,20 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>About me</title>
+    <title>About me — Cook that Egg</title>
 </head>
 <body>
-    <div id="nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About me</a>
-        <a href="contact.html">Contact me</a>
-    </div>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <div class="about_me">
-        <p><b>Since my school years (over 20 years ago now!) I wanted to learn a little coding but always shied-away from making that first move. Now my jurney has began and I can honestly say, I'm glade I didn't wait 1 day longer.<br><br>I started my coding journey with the great people at <a href="https://wearecodenation.com/" target="_blank">Code Nation</a></b></p>
-    </div>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html">Cook that Egg</a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label class="menu-button" for="nav-toggle">Menu</label>
+            <div class="nav-panels">
+                <nav class="nav-row" aria-label="Site">
+                    <span class="nav-label">Site</span>
+                    <a href="index.html">Home</a>
+                    <a href="about.html" aria-current="page">About me</a>
+                    <a href="contact.html">Contact me</a>
+                </nav>
+                <nav class="nav-row" aria-label="Recipes">
+                    <span class="nav-label">Recipes</span>
+                    <a href="boiled.html">Boiled</a>
+                    <a href="fried.html">Fried</a>
+                    <a href="poached.html">Poached</a>
+                    <a href="scrambled.html">Scrambled</a>
+                    <a href="plain omelette.html">Plain Omelette</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <article class="page-block">
+            <p class="kicker">A little background</p>
+            <h1>About me</h1>
+            <p>Since my school years (over 20 years ago now!) I wanted to learn a little coding but always shied-away from making that first move. Now my jurney has began and I can honestly say, I'm glade I didn't wait 1 day longer.</p>
+            <p>I started my coding journey with the great people at <a href="https://wearecodenation.com/" target="_blank" rel="noopener noreferrer">Code Nation</a>.</p>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <p>Cook that Egg — first website, still serving yolks.</p>
+    </footer>
 </body>
 </html>
